@@ -4,16 +4,18 @@ program PascalTriangle;
     Please do.
 }
 
-var n: integer;
-var line: array { Complete the array definition... }
+var n,i: integer;
+var line: array [1..100] of integer; { Complete the array definition... }
 
 begin
+line[1] := 1;
 { Initialize 'line' array }
 ReadLn(n);
 for i := 1 to n do
     begin
+        makeLine(line, i)
         {
             Construct the new line and then print it.
-        }
-    end;
+        }
+    end
 end.
