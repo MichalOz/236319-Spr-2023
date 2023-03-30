@@ -21,7 +21,7 @@ end;
 }
 
 var n, i: integer;
-var line: array [1..100] of integer; { Complete the array definition... }
+var line: array [1..15] of integer; { Complete the array definition... }
 
 begin
 line[1] := 1;
