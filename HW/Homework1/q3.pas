@@ -19,15 +19,15 @@ end;
 var i, j, a, b, cc, d, hw, exam:integer;
 var input:array [0..4] of char;
 var ch:char;
-var outC:array [0..2] of char;
-var outP:array [0..2] of boolean;
-var outG:array [0..2] of integer;
+var outC:array [0..4] of char;
+var outP:array [0..4] of boolean;
+var outG:array [0..4] of integer;
 var Ci,Pi,Gi:integer;
 
 begin
-    Ci:=2;
-    Gi:=2;
-    Pi:=2;
+    Ci:=4;
+    Gi:=4;
+    Pi:=4;
     for i:=0 to 4 do
         ReadLn(input[i]);
 
