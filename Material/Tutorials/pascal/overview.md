@@ -20,7 +20,7 @@ program HelloWorld;
 { Definitions are placed here - 
   types, variables, procedures, functions, ...}
 begin
-    WriteLn('Hello, World!');
+    WriteLn('Hello, World!')
     { More statements can be added here }
 end.
 ```
@@ -53,7 +53,7 @@ program HelloWorld;
 var str : string;
 begin
     str := 'Hello, World!';
-    WriteLn(str);
+    WriteLn(str)
 end.
 ```
 
@@ -83,7 +83,7 @@ var c1 : char;
 
 ## input & output
 
-* `Write(1, 2, "hello")`
+* `Write(1, 2, 'hello')`
 * `WriteLn(x, y)`
 * `Read(x)`
 * `ReadLn(y)`
@@ -115,7 +115,7 @@ type Letter = 'A' .. 'Z';
      BasicColor = Red .. Blue;
 ```
 
-* Important note - boundries are not enforced
+* Important note - boundaries are not enforced
 
 ---
 
@@ -259,9 +259,9 @@ else
 
 ```pascal
 case i of
-    1: write("A");
-    2: write("B");
-    3: write("C") // no semicolon!
+    1: write('A');
+    2: write('B');
+    3: write('C') // no semicolon!
 end
 ```
 
@@ -348,7 +348,7 @@ type Point = record
         letter: char;
         case UsePolar : boolean of
             False : (X, Y, Z : Real);
-            True  : (R, theta, phi : Real);
+            True  : (R, theta, phi : Real)
     end;
 ```
 
@@ -361,14 +361,14 @@ The `Point` record will have different fields based on the value of `UsePolar`.
 if (not p.UsePolar) then
     r := CubicRoot(p.X*p.X + p.Y*p.Y + p.Z*p.Z)
 else
-    r := p.R;
+    r := p.R
 end.
 
 ```
 
 ---
 
-## arrays in pascal
+## Arrays in Pascal
 
 
 > `array` **index-type** `of` **element-type**
@@ -432,13 +432,13 @@ s[i] := '?'; { s = 'Hello, World?' }
 
 ## functions
 
-pascal functions always return a value
+Pascal functions always return a value
 
 ```pascal
 function myFunc(a: integer; b: real): real;
 begin
     myFunc := a * b // that's how you set the return value
-end
+end;
 ```
 
 * in this example `a` and `b` are passed by-value
@@ -452,9 +452,9 @@ a function that doesn't return anything is a procedure
 ```pascal
 procedure myProc(var a: boolean);
 begin
-    WriteLn("Hello, World!");
+    WriteLn('Hello, World!');
     a := true
-end
+end;
 ```
 
 `var` here means "pass by reference"
