@@ -9,6 +9,6 @@ fun is_alive (c1, c2, c3) (c4, c5, c6) (c7, c8, c9)=
       case c5 of
         empty => if (List.length aliveCells)=3 then alive else empty
        | alive => if (List.length aliveCells)=2 orelse (List.length aliveCells)=3 then alive else empty
-       end
+      end
     
     
