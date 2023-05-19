@@ -1,0 +1,24 @@
+Standard ML of New Jersey (64-bit) v110.99.2 [built: Sun Mar 20 20:10:23 2022]
+[opening hw3_q1.sml]
+[opening hw3_q1_def.sml]
+val toChar = fn : bool -> char
+val it = () : unit
+val mapState = fn : ('a -> 'b) -> 'a list list -> 'b list list
+val toString = fn : char list -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val frameToState = fn : string list -> bool list list
+val stateToFrame = fn : bool list list -> string list
+val printFrame = fn : string list -> unit
+- ===TEST START===
+val it = () : unit
+val test1 = "PASSED" : string
+val test2 = "PASSED" : string
+val test3 = "PASSED" : string
+val test4 = "PASSED" : string
+ * 
+* *
+val test5 = () : unit
+
