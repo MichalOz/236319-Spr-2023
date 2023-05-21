@@ -3,11 +3,13 @@ Standard ML of New Jersey (64-bit) v110.99.2 [built: Sun Mar 20 20:10:23 2022]
 [opening hw3_q1_def.sml]
 val toChar = fn : bool -> char
 val it = () : unit
-val mapState = fn : ('a -> 'b) -> 'a list list -> 'b list list
-val toString = fn : char list -> string
 [autoloading]
 [library $SMLNJ-BASIS/basis.cm is stable]
 [library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val mapState = fn : ('a -> 'b) -> 'a list list -> 'b list list
+val toString = fn : char list -> string
+[autoloading]
 [autoloading done]
 val frameToState = fn : string list -> bool list list
 val stateToFrame = fn : bool list list -> string list

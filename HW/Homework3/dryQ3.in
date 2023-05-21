@@ -1,0 +1,6 @@
+val x = List [Atom "45", List [Atom "3", Atom "88"], List[],Atom "65", List[Atom "87"]];
+toString x;
+car x;
+cdr x;
+cons (List[Atom "Hello"], List[Atom "world"]);
+toString it;
